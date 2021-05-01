@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -8,7 +9,9 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script> -->
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
+
 </head>
+
 <body>
     <!-- 유저 이미지 선택 -->
     <div id="user_img">
@@ -16,13 +19,16 @@
     </div>
 
     <!-- 유저 닉네임 정보 입력 -->
-    <div id="input_box">
-        닉네임을 입력하세요
+    <div>
+        <input id="input_box" placeholder="Your Nickname" minlength="2" maxlength="15" 
+        onkeypress="if(event.keyCode == 13) {enter();}">
+        </input>
     </div>
-    <div id="enter_btn">
-        <button>
-            Enter
-        </button>
-    </div>
+
+    <button id="enter_btn" onclick="enter()">
+        Enter
+    </button>
+
 </body>
+
 </html>
