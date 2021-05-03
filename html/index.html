@@ -19,10 +19,14 @@
     </div>
 
     <!-- 유저 닉네임 정보 입력 -->
+    <!-- http://localhost:12000/main.js 와 같은 형식으로 서버쪽 스크립트 파일을 지정해야함 -->
+    <!-- Todo 웹서버가 우선되어야함 -->
     <div>
-        <input id="input_box" placeholder="Your Nickname" minlength="2" maxlength="15" 
-        onkeypress="if(event.keyCode == 13) {enter();}">
+        <form action = "../js/main.js">
+        <input id="input_box" placeholder="Your Nickname" minlength="2" maxlength="15"
+            onkeypress="if(event.keyCode == 13) {enter();}">
         </input>
+    </form>
     </div>
 
     <button id="enter_btn" onclick="enter()">
