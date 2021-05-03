@@ -1,8 +1,9 @@
 var nickname = "";
 var img = "";
 
-function enter(){
+function enter() {
   getNickName();
+  
   // main.html로 img와 nickname 정보와 함꼐넘어간다.
 }
 
