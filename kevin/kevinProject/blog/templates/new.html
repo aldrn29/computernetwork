@@ -1,13 +1,17 @@
-<div class='container'>
-    <form action="{% url 'create' %}" methond="GET">
-        <h4>제목 : </h4>
-        <input type="text" name="title">
-        <br>
-        <br>
-        <h4>본문 : </h4>
-        <textarea name="body" cols="40" rows="10"></textarea>
-        <br>
-        <br>
-        <input type="submit" value="제출하기">
-    </form>
-</div>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New</title>
+    <link rel="stylesheet" href="{% static 'css/new.css' %}">
+</head>
+<body>
+    <div class='container'>
+        <form action="{% url 'create' %}" methond="GET">
+            <input class="item" type="text" name="title" placeholder="제목을 입력해주세요">
+            <textarea class="item" name="body" cols="40" rows="10" placeholder="내용을 입력해주세요"></textarea>
+            <input class="item" type="submit" value="제출">
+        </form>
+    </div>
+</body>
+</html>
